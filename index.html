@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agamm.</title>
+
+    <!--CSS-->
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+
+    <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--icon-->
+    <a href="https://icons8.com/icon/12599/github"></a>
+    <a href="https://icons8.com"></a>
+
+    <link rel="icon" type="image" href="public/image/pic.jpeg" class="w-10 rounded-full">
+
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+        color: orange;
+    }
+    
+    .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    
+    .hover-underline-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    progress {
+        vertical-align: baseline;
+    }
+    
+    .typing:before {
+        animation: animate 4s steps(12) infinite;
+    }
+</style>
+
+<body>
+    <nav class="bg-gray-800 py-4 sticky top-0">
+        <div class="container mx-auto flex justify-center items-center">
+
+            <!-- Navigasi Menu -->
+            <ul class="hidden nav-ul md:flex space-x-6 text-white ml-10">
+                <li><a href="#" class="hover:text-yellow-500">Home</a></li>
+                <li><a href="about.html" class="hover:text-yellow-500">About Me</a></li>
+            </ul>
+
+            <!-- Tombol Hamburger untuk Mobile -->
+            <div class="md:hidden flex ml-auto scroll-smooth">
+                <button id="mobile-menu-button" class="text-white p-2 focus:outline-none">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+            </div>
+
+        </div>
+
+        <!-- Navigasi Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="bg-gray-800 text-white text-center py-4">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white items-center">
+
+        <!-- Container -->
+        <div class="container mx-auto px-4">
+
+            <!-- Hero Content -->
+            <div class="lg:flex lg:items-center">
+
+                <!-- Text Content -->
+                <div class="flex flex-wrap-reverse">
+                    <img src="public/image/pic.jpeg" class="max-w-xs hero-image" alt="">
+                    <div class="lg:w-1/2 py-5 mx-10">
+                        <h1 class="text-2xl lg:text-2xl font-bold mb-4">Hi, I’m Agam👋</h1>
+                        <h2 class="text"> <span class="typing"> </span></h2>
+                        <p class="text-gray-600 mb-6">
+                            Familiar with UI/UX Design and Frontend Developer, have UI Design and User Research skills and experience using Figma and Adobe XD. Proficient in Frontend Developer using basic React JS, as well as CSS Frameworks such as Bootstrap, Tailwind, and Material
+                            CSS. For other skills, it is reliable in Video Editing
+                        </p>
+                        <div class="wrapper icon flex gap-4">
+                            <button>
+                                <div class="icon">
+                                    <a href="https://www.linkedin.com/in/agam-vito-7b4982205/">
+                                        <img width="35" height="35" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin" />
+                                    </a>
+                                </div>
+                            </button>
+                            <button>
+                                <div class="icon">
+                                    <a href="https://github.com/agamm-vitooo">
+                                        <img width="35" height="35" src="https://img.icons8.com/ios-filled/50/github.png" alt="github" />
+                                    </a>
+                                </div>
+                            </button>
+                            <button>
+                                <div class="icon">
+                                    <a href="https://dribbble.com/Kygokygo7">
+                                        <img width="35" height="35" src="https://img.icons8.com/fluency/35/dribbble.png" alt="dribbble" />
+                                    </a>
+                                </div>
+                            </button>
+                            <button>
+                                <div class="icon">
+                                    <a href="">
+                                        <img width="35" height="35" src="https://img.icons8.com/color/35/gmail-new.png" alt="gmail-new" />
+                                    </a>
+                                </div>
+                            </button>
+                            <button>
+                                <div class="icon">
+                                    <a href="https://www.instagram.com/helsinki________/">
+                                        <img width="35" height="35" src="https://img.icons8.com/fluency/35/instagram-new.png" alt="instagram-new" />
+                                    </a>
+                                </div>
+                            </button>
+                            <button>
+                                <div class="icon">
+                                    <a href="https://twitter.com/___agamm">
+                                        <img width="35" height="35" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1" />
+                                    </a>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Galery-->
+        <div class="flex justify-center items-center">
+            <!-- Container -->
+            <div class="container grid grid-cols-1 gap-8 md:grid-cols-3 mx-14 mt-5 mb-7 lg:mb-7">
+
+                <!-- Card 1 -->
+                <div class="box bg-slate-50 p-6 border-2 rounded-lg flex flex-col items-start hover:bg-slate-100 hover:border-slate-300">
+                    <img src="public/image/portfolio-1.png" alt="Card Image" class="mb-4">
+                    <h3 class="text-xl font-bold mb-2">Great Homeland Project</h3>
+                    <p class="text-gray-600 text-left">Project jual beli makanan asal Afrika. Platform yang didedikasikan untuk menghadirkan kelezatan kuliner khas benua Afrika langsung ke dalam rumah Anda. Situs ini adalah tujuan utama untuk pecinta makanan yang ingin merasakan sensasi
+                        dan cita rasa unik dari hidangan khas Afrika.</p>
+
+                    <div class="btn flex gap-3">
+                        <a href="https://github.com/agamm-vitooo/great-homeland-project.git">
+                            <button type="button" class="mt-3 inline-flex items-center px-3 py-2 text-sm text-center text-white bg-gray-800 rounded-lg hover:bg-gray-600">
+                          Github
+                          <img width="25" height="25" src="public/icon/icons8-github-50.png" alt="github" class="mx-3 text-white" />
+                            </button>
+                        </a>
+                        <a href="https://great-homeland-project.vercel.app/">
+                            <button type="button" class="mt-3 inline-flex items-center px-3 py-2 text-sm text-center text-white bg-yellow-500 rounded-lg hover:bg-yellow-400">
+                      Demo
+                      <img width="25" height="25" src="public/icon/icons8-right-30.png" alt="right--v1" class="mx-3"/>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="box bg-slate-50 p-6 border-2 rounded-lg flex flex-col items-start hover:bg-slate-100 hover:border-slate-300">
+                    <img src="public/image/portfolio-2.png" alt="Card Image" class="mb-4">
+                    <h3 class="text-xl font-bold mb-2">Planty'x Website</h3>
+                    <p class="text-gray-600 text-left">Project membuat landing page dan melakukan implementasi dari design Figma ke Source Code menggunakan Tailwind CSS dan GSAP Animations Javascript. Situs tersebut merupakan situs jual beli tanaman indoor untuk rumah.</p>
+
+                    <div class="btn flex gap-3 mt-10">
+                        <a href="https://github.com/agamm-vitooo/planty-website.git">
+                            <button type="button" class="mt-3 inline-flex items-center px-3 py-2 text-sm text-center text-white bg-gray-800 rounded-lg hover:bg-gray-600">
+                        Github
+                        <img width="25" height="25" src="public/icon/icons8-github-50.png" alt="github" class="mx-3 text-white" />
+                          </button>
+                        </a>
+                        <a href="https://plantyyy.netlify.app/">
+                            <button type="button" class="mt-3 inline-flex items-center px-3 py-2 text-sm text-center text-white bg-yellow-500 rounded-lg hover:bg-yellow-400">
+                    Demo
+                    <img width="25" height="25" src="public/icon/icons8-right-30.png" alt="right--v1" class="mx-3"/>
+                          </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="box bg-slate-50 p-6 border-2 rounded-lg flex flex-col items-start hover:bg-slate-100 hover:border-slate-300">
+                    <img src="public/image/portfolio-3.png" alt="Card Image" class="mb-4">
+                    <h3 class="text-xl font-bold mb-2">Footwear.co</h3>
+                    <p class="text-gray-600 text-left">Situs jual beli sepatu, marketplace terpercaya di Indonesia yang menjamin keaslian semua produk dari sepatu. Menggunakan teknologi berupa Tailwind CSS.</p>
+
+                    <div class="btn flex gap-3 mt-24">
+                        <a href="https://github.com/agamm-vitooo/footwear.git">
+                            <button type="button" class="mt-3 inline-flex items-center px-3 py-2 text-sm text-center text-white bg-gray-800 rounded-lg hover:bg-gray-600">
+                        Github
+                        <img width="25" height="25" src="public/icon/icons8-github-50.png" alt="github" class="mx-3 text-white" />
+                          </button>
+                        </a>
+                        <a href="https://footwearco.netlify.app/">
+                            <button type="button" class="mt-3 inline-flex items-center px-3 py-2 text-sm text-center text-white bg-yellow-500 rounded-lg hover:bg-yellow-400">
+                    Demo
+                    <img width="25" height="25" src="public/icon/icons8-right-30.png" alt="right--v1" class="mx-3"/>
+                          </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="box bg-slate-50 p-6 border-2 rounded-lg flex flex-col items-start hover:bg-slate-100 hover:border-slate-300">
+                    <img src="public/image/portfolio-4.png" alt="Card Image" class="mb-4">
+                    <h3 class="text-xl font-bold mb-2">Media Selaras</h3>
+                    <p class="text-gray-600 text-left">Pembuatan landing page halaman beasiswa yang berisi hero section, bagian tahapan pendaftaran, dan card list beasiswa yang tersedia, menggunakan Tailwind CSS .</p>
+
+                    <div class="btn flex gap-3 mt-16">
+                        <a href="https://github.com/agamm-vitooo/medsel-halamanbeasiswa.git">
+                            <button type="button" class="mt-3 inline-flex items-center px-3 py-2 text-sm text-center text-white bg-gray-800 rounded-lg hover:bg-gray-600">
+                      Github
+                      <img width="25" height="25" src="public/icon/icons8-github-50.png" alt="github" class="mx-3 text-white" />
+                        </button>
+                        </a>
+                        <a href="https://halaman-beasiswa.vercel.app/">
+                            <button type="button" class="mt-3 inline-flex items-center px-3 py-2 text-sm text-center text-white bg-yellow-500 rounded-lg hover:bg-yellow-400">
+                  Demo
+                  <img width="25" height="25" src="public/icon/icons8-right-30.png" alt="right--v1" class="mx-3"/>
+                        </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="box bg-slate-50 p-6 border-2 rounded-lg flex flex-col items-start hover:bg-slate-100 hover:border-slate-300">
+                    <div class="box">
+                        <img src="public/image/portfolio-5.png" alt="Card Image" class="mb-4">
+                        <h3 class="text-xl font-bold mb-2">CRUD Operations</h3>
+                        <p class="text-gray-600 text-left">Project CRUD Operations menggunakan HTML, CSS, dan Javascript.</p>
+
+                        <div class="btn flex gap-3 mt-16">
+                            <a href="https://github.com/agamm-vitooo/CRUD.git">
+                                <button type="button" class="mt-3 inline-flex items-center px-3 py-2 text-sm text-center text-white bg-gray-800 rounded-lg hover:bg-gray-600">
+                      Github
+                      <img width="25" height="25" src="public/icon/icons8-github-50.png" alt="github" class="mx-3 text-white" />
+                        </button>
+                            </a>
+                            <a href="https://crud-operations-beige.vercel.app/">
+                                <button type="button" class="mt-3 inline-flex items-center px-3 py-2 text-sm text-center text-white bg-yellow-500 rounded-lg hover:bg-yellow-400">
+                  Demo
+                  <img width="25" height="25" src="public/icon/icons8-right-30.png" alt="right--v1" class="mx-3"/>
+                        </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        AOS.init();
+    </script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+</body>
+
+
+</html>

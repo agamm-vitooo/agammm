@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+
+    <!--CSS-->
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
+
+    <!--Tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--icon-->
+    <a href="https://icons8.com/icon/12599/github"></a>
+    <a href="https://icons8.com"></a>
+
+    <link rel="icon" type="image" href="public/image/pic.jpeg" class="w-10 rounded-full">
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    
+    .hover-underline-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    
+    progress {
+        vertical-align: baseline;
+    }
+    
+    .typing:before {
+        animation: animate 4s steps(12) infinite;
+    }
+</style>
+
+<body class="bg-white">
+    <nav class="bg-gray-800 py-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-center items-center">
+
+            <!-- Navigasi Menu -->
+            <ul class="hidden md:flex space-x-6 text-white ml-10">
+                <li><a href="index.html" class="hover:text-yellow-500 hover-underline-animation">Home</a></li>
+                <li><a href="about.html" class="hover:text-yellow-500 hover-underline-animation">About Me</a></li>
+            </ul>
+
+            <!-- Tombol Hamburger untuk Mobile -->
+            <div class="md:hidden flex ml-auto scroll-smooth">
+                <button id="mobile-menu-button" class="text-white p-2 focus:outline-none">
+      <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+          d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+            </div>
+
+        </div>
+
+        <!-- Navigasi Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="bg-gray-800 text-white text-center py-4">
+                <li><a href="index.html" class="hover-underline-animation">Home</a></li>
+                <li><a href="about.html" class="hover-underline-animation">About Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="max-w-screen-xl flex flex-wrap justify-evenly px-4 py-8 mx-10 sm:px-6 sm:py-12 lg:px-8">
+
+            <header class="text-center grid place-content-start place-items-start mb-5">
+                <h2 class="typed text-xl text-left font-bold text-gray-900 sm:text-3xl">
+                    Welcome👋
+                </h2>
+                <p class="max-w-md mx-auto my-2 mt-4 text-gray-500 text-left">
+                    Timeline related to several experiences, skills, and others.
+                </p>
+                <a href="public/files/Agam Vito Asyhari - CV ATS.pdf">
+                    <button class="text-white bg-yellow-500 px-5 inline-flex py-3 mt-3 rounded-lg font-semibold hover:bg-yellow-600">
+                        Download CV
+                        <img src="public/icon/icons8-down-24.png" alt="" width="22" height="22">
+                    </button>
+                </a>
+            </header>
+
+            <div class="bg-gray-100 p-7 items-center rounded-md mb-5">
+                <h1 class="mb-3 font-medium grid place-content-center text-xl">Timeline Experience</h1>
+                <div class="max-w-xl w-full p-6 bg-white rounded shadow-lg">
+
+                    <a href="">
+                        <div class="relative mt-6 md:grid md:grid-cols-9 md:gap-4 hover:bg-slate-100 p-5 rounded-md">
+                            <div class="md:col-span-1 text-center md:text-right">
+                                <div class="h-full flex justify-center items-center">
+                                    <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center mb-3">
+                                        2
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:col-span-8 md:pl-4">
+                                <div class="border-l-2 border-blue-500 pl-4">
+                                    <h3 class="text-lg text-black font-semibold mb-1">IT Support Specialist</h3>
+                                    <p class="font-light text-base">Mar 2023 - Aug 2023</p>
+                                    <p>
+                                        <p>
+                                            <ul class="text-gray-600">
+                                                <li>Membuat Wireframe dan High Fidelity Design pada perbaikan website</li>
+                                                <li>Mengimplementasikan UI Design yang telah dibuat ke dalam website dengan Next JS, Typescript, dan Tailwind CSS</li>
+                                            </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="relative mt-6 md:grid md:grid-cols-9 md:gap-4 hover:bg-slate-100 p-5 rounded-md">
+                            <div class="md:col-span-1 text-center md:text-right">
+                                <div class="h-full flex justify-center items-center">
+                                    <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center mb-3">
+                                        3
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:col-span-8 md:pl-4">
+                                <div class="border-l-2 border-blue-500 pl-4">
+                                    <h3 class="text-lg text-black font-semibold mb-1">Frontend Developer at Dedikasi Pemuda Negeri</h3>
+                                    <p class="font-light text-base">Apr 2023 - Jun 2023</p>
+                                    <p>
+                                        <p>
+                                            <ul class="text-gray-600">
+                                                <li>Memelihara Aplikasi yang Sudah Ada
+                                                </li>
+                                                <li>Mampu membuat halaman website dengan dukungan framework</li>
+                                            </ul>
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="relative mt-6 md:grid md:grid-cols-9 md:gap-4 hover:bg-slate-100 p-5 rounded-md">
+                            <div class="md:col-span-1 text-center md:text-right">
+                                <div class="h-full flex justify-center items-center">
+                                    <div class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center mb-3">
+                                        4
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:col-span-8 md:pl-4">
+                                <div class="border-l-2 border-blue-500 pl-4">
+                                    <h3 class="text-lg text-black font-semibold mb-1">Test Management at CIMB Niaga</h3>
+                                    <p class="font-light text-base">Aug 2023 - Present</p>
+                                    <p>
+                                        <p>
+                                            <ul class="text-gray-600">
+                                                <li>Melakukan identifikasi requirement sistem</li>
+                                                <li>Mengerjakan pengujian dan melakukan analisis yang sesuai, termasuk defect management</li>
+                                            </ul>
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Add more timeline events as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
